@@ -16,6 +16,10 @@ main:main.o test1.o
 main.o:main.c
     gcc -c main.c -o main.o
 
+#伪目标
+.PHONY:
+clear:
+    rm -f main.o
 
 
 #变量用法
